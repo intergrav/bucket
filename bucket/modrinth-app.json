@@ -10,8 +10,7 @@
         }
     },
     "installer": {
-        "script": "Start-Process msiexec -ArgumentList @('/i', \"`\"$dir\\setup.msi_`\"\", '/qn', '/norestart') -Wait -Verb RunAs",
-        "requiresAdmin": true
+        "script": "Start-Process msiexec -ArgumentList @('/i', \"`\"$dir\\setup.msi_`\"\", '/qn', '/norestart') -Wait -Verb RunAs"
     },
     "checkver": {
         "url": "https://launcher-files.modrinth.com/versions/latest/windows/Modrinth%20App",
@@ -21,7 +20,6 @@
         "url": "https://launcher-files.modrinth.com/versions/$version/windows/Modrinth%20App_$version_x64_en-US.msi#/setup.msi_"
     },
     "uninstaller": {
-        "script": "Start-Process msiexec -ArgumentList @('/x', \"`\"$dir\\setup.msi_`\"\", '/qn', '/norestart') -Wait -Verb RunAs",
-        "requiresAdmin": true
+        "script": "Start-Process msiexec -ArgumentList @('/x', \"`\"$dir\\setup.msi_`\"\", '/qn', '/norestart') -Wait -Verb RunAs"
     }
 }
